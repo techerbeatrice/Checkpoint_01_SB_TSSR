@@ -11,10 +11,10 @@ PfSense fonctionne principalement **au niveau de la couche 3 (réseau)** et util
 
 Le pfSense peut être déployé comme **pare-feu et routeur principal pour protéger le réseau global**, tandis que le Switch permet de **connecter les différents appareils du réseau local pour une communication interne rapide et efficace**.
 
-**2) Que représente em0, em1, em2 ?**
+**2) Que représente em0, em1, em2 ?**   
 _Réponse_ : em0 c'est l'interface WAN de pfSense-1, em1 c'est l'interface LAN de pfSense-1 et em2 c'est l'interface OPT1 de pfSense-1.
 
-**3) Que signifie /26 ?**
+**3) Que signifie /26 ?**   
 _Réponse_ : C'est le masque sous-réseau en notation CIDR de l'IP 10.0.1.0 qui signifie que les 26 premiers bits déterminent la composante réseau de l'adresse IP.
 
 **4)Dans le vocabulaire IP, qu'est-ce que Ubuntu-1, Ubuntu-2, ... ?**
