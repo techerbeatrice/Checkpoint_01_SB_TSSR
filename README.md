@@ -28,10 +28,10 @@ Ubuntu2 :
 Adresse IP : 10.0.0.0
 Masque de sous-réseau : /24 (255.255.255.0)
 Taille du sous-réseau : 256 adresses (2^8), allant de 10.0.0.0 à 10.0.0.255
-Description : "Ubuntu2" est le nom donné au sous-réseau Docker, et il contient 256 adresses IP disponibles. La plage d'adresses va de 10.0.0.0 à 10.0.0.255.
+Description : "Ubuntu2" est le nom donné au sous-réseau du Docker2, et il contient 256 adresses IP disponibles. La plage d'adresses va de 10.0.0.0 à 10.0.0.255.
 
 Ubuntu1 :
 Adresse IP : 10.0.1.0
-Masque de sous-réseau : /26 (équivalent à 255.255.255.192)
+Masque de sous-réseau : /26 (255.255.255.192)
 Taille du sous-réseau : 64 adresses (2^6), allant de 10.0.1.0 à 10.0.1.63
-Description : "Ubuntu1" est le nom donné au sous-réseau Docker, et il contient 64 adresses IP disponibles. La plage d'adresses va de 10.0.1.0 à 10.0.1.63.
+Description : "Ubuntu1" est le nom donné au sous-réseau du Docker2, et il contient 64 adresses IP disponibles. La plage d'adresses va de 10.0.1.0 à 10.0.1.63.
