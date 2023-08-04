@@ -70,7 +70,7 @@ _A qui correspond le request et le reply dans toute la trame ?_
 Ce sont des paquets envoyés, que s'échangent les 2 machines.
 
 _Quels ont été les rôles des matériels A et B ?_   
-L'un a une adresse de réseau, l'autre a une adresse de broadcast ou de diffusion.
+
 
 **Fichier 2 : TSSRCheckpoint1_Capture2.pcap**   
 
