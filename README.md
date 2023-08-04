@@ -24,13 +24,13 @@ Ubuntu2 :
 Adresse IP : 10.0.0.0
 Masque de sous-réseau : /24 (255.255.255.0)
 Taille du sous-réseau : 256 adresses (2^8), allant de 10.0.0.0 à 10.0.0.255
-contient 256 adresses IP disponibles. La plage d'adresses va de 10.0.0.0 à 10.0.0.255.
+contient 256-2 = 254 adresses IP disponibles. La plage d'adresses va de 10.0.0.1 à 10.0.0.254.
 
 Ubuntu1 :
 Adresse IP : 10.0.1.0
 Masque de sous-réseau : /26 (255.255.255.192)
 Taille du sous-réseau : 64 adresses (2^6), allant de 10.0.1.0 à 10.0.1.63
-contient 64 adresses IP disponibles. La plage d'adresses va de 10.0.1.0 à 10.0.1.63.
+contient 64-2 = 62 adresses IP disponibles. La plage d'adresses va de 10.0.1.1 à 10.0.1.63.
 
 **5) De même, qu'est-ce que A et B ?**   
 _Réponse_ : A correspond au switch et B correspond au pfSense firewall/routeur.
