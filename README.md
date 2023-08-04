@@ -23,3 +23,19 @@ _Réponse_ : em0 c'est l'interface WAN de pfSense-1, em1 c'est l'interface LAN d
 **3) Que signifie /26 ?**
 
 _Réponse_ : C'est le masque sous-réseau en notation CIDR de l'IP 10.0.1.0 qui signifie que les 26 premiers bits déterminent la composante réseau de l'adresse IP.
+
+**4)Dans le vocabulaire IP, qu'est-ce que Ubuntu-1, Ubuntu-2, ... ?**
+
+_Réponse_ : Ubuntu-1 et Ubuntu-2 sont des dockers. Deux sous-réseaux sont utilisés pour isoler les conteneurs Docker et leur permettre de communiquer entre eux au sein de ces sous-réseaux.
+
+Ubuntu2 :
+Adresse IP : 10.0.0.0
+Masque de sous-réseau : /24 (255.255.255.0)
+Taille du sous-réseau : 256 adresses (2^8), allant de 10.0.0.0 à 10.0.0.255
+Description : "Ubuntu2" est le nom donné au sous-réseau Docker, et il contient 256 adresses IP disponibles. La plage d'adresses va de 10.0.0.0 à 10.0.0.255.
+
+Ubuntu1 :
+Adresse IP : 10.0.1.0
+Masque de sous-réseau : /26 (équivalent à 255.255.255.192)
+Taille du sous-réseau : 64 adresses (2^6), allant de 10.0.1.0 à 10.0.1.63
+Description : "Ubuntu1" est le nom donné au sous-réseau Docker, et il contient 64 adresses IP disponibles. La plage d'adresses va de 10.0.1.0 à 10.0.1.63.
