@@ -65,3 +65,11 @@ Aucune, elles ont des adresses de réseaux privés.
 
 Ajoutez un serveur DHCP à chaque sous-réseau : Configurez deux serveurs DHCP distincts, un pour switch et un pour switch-1. Chaque serveur DHCP doit être configuré pour attribuer des adresses IP dans sa propre plage d'adresses.
 
+## **1.3 Analyse de trames :**
+
+**Fichier 1 : TSSRCheckpoint1_Capture1.pcap**
+Dans cette trame, qui initialise la communication ?
+Le matériel source 66:68:00 par son adresse IP 10.10.4.1 (request)
+Est-ce que cette communication a réussi ? Si oui, indique entre quels matériels, si non indique pourquoi cela n'a pas fonctionné.
+Oui, 66:68:03 par son adresse IP 10.10.4.2 a répondu (reply) à 66:68:00
+
