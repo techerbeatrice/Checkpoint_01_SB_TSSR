@@ -74,23 +74,23 @@ L'un a une adresse de réseau, l'autre a une adresse de broadcast ou de diffusio
 
 **Fichier 2 : TSSRCheckpoint1_Capture2.pcap**   
 
-_Dans cette trame, qui initialise la communication ?_
+_Dans cette trame, qui initialise la communication ?_   
 La machine qui a l'adresse IP 10.10.80.3
 
-_Est-ce que cette communication a réussi ? Si oui, indique entre quels matériels, si non indique pourquoi cela n'a pas fonctionné._   
+_Est-ce que cette communication a réussi ? Si oui, indique entre quels matériels, si non indique pourquoi cela n'a pas fonctionné._      
 Non, la commmunication a échoué (no response found!), initialisé par matériel 66.68.02 IP 10.10.80.3
 
 _Quels ont été les rôles des matériels A et B ?_   
 
 **Fichier 3 : TSSRCheckpoint1_Capture3.pcap**
-_Dans cette trame, qui initialise la communication ?_   
+_Dans cette trame, qui initialise la communication ?_         
 La machine 66:68:02 qui a l'adresse IP 10.10.80.3
 
-_Est-ce que cette communication a réussi ? Si oui, indique entre quels matériel, si non indique pourquoi cela n'a pas fonctionné._   
+_Est-ce que cette communication a réussi ? Si oui, indique entre quels matériel, si non indique pourquoi cela n'a pas fonctionné._      
 Communication échouée entre la machine 66:68:02 IP 10.10.80.3 et un broadcast et on ne peut pas envoyer un ping à un broadcast qui une adresse de diffusion et non de réception.
 
-_Quels ont été les rôles des matériels A et B ?_   
+_Quels ont été les rôles des matériels A et B ?_     
 
-_Où vois-tu les différents protocoles encapsulés ?_   
+_Où vois-tu les différents protocoles encapsulés ?_      
 
 
