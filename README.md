@@ -17,7 +17,7 @@ _Réponse_ : em0 c'est l'interface WAN de pfSense-1, em1 c'est l'interface LAN d
 **3) Que signifie /26 ?**   
 _Réponse_ : C'est le masque sous-réseau en notation CIDR de l'IP 10.0.1.0 qui signifie que les 26 premiers bits déterminent la composante réseau de l'adresse IP.
 
-**4)Dans le vocabulaire IP, qu'est-ce que Ubuntu-1, Ubuntu-2, ... ?**
+**4)Dans le vocabulaire IP, qu'est-ce que Ubuntu-1, Ubuntu-2, ... ?**   
 _Réponse_ : Ubuntu-1 et Ubuntu-2 sont des dockers. Deux sous-réseaux sont utilisés pour isoler ces conteneurs Docker et leur permettre de communiquer entre eux au sein de ces sous-réseaux.
 
 Ubuntu2 :
