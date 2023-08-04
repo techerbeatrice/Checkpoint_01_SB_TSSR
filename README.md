@@ -51,7 +51,7 @@ _Réponse_ : Non, Ubuntu-2 est connecté au switch, et le switch est connecté �
 Non, sur le schéma, les machines 1 et 2 sont éteintes ainsi que le routeur pfSense. Il faut les allumer pour que le routeur soit en mesure de diriger le trafic entre les deux réseaux locaux (représentés par switch et switch1) et d'acheminer les paquets de données entre les machines.
 
 **13. De même, quelles machines vont pouvoir sortir du réseau ?**      
-Aucune, elles ont des adresses de réseaux privés.
+Aucune, elles sont éteintes et elles ont des adresses de réseaux privés.
 
 **On veut passer les adresses IP des machines en dynamique pour qu'elles puissent toutes communiquer entre-elles. Doit-on ajouter des éléments au schéma pour que cela soit possible ? Deux situations sont possibles.**      
 Ajoutez un serveur DHCP à chaque sous-réseau : Configurez deux serveurs DHCP distincts, un pour switch et un pour switch-1. Chaque serveur DHCP doit être configuré pour attribuer des adresses IP dans sa propre plage d'adresses.
