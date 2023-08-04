@@ -15,3 +15,8 @@ Un switch fonctionne **au niveau de la couche 2 du modèle OSI**, également app
 PfSense fonctionne principalement **au niveau de la couche 3 (réseau)** et utilise les adresses IP pour acheminer les paquets de données entre différents réseaux et offrir des fonctionnalités de pare-feu et de routage avancées. Il peut également inclure des fonctionnalités de la couche 4 (transport) pour un contrôle plus fin du trafic réseau.
 
 Le pfSense peut être déployé comme **pare-feu et routeur principal pour protéger le réseau global**, tandis que le Switch permet de **connecter les différents appareils du réseau local pour une communication interne rapide et efficace**.
+
+**2) Que représente em0, em1, em2 ?**
+
+Réponse : em0 c'est l'interface WAN de pfSense-1, em1 c'est l'interface LAN de pfSense-1 et em2 c'est l'interface OPT1 de pfSense-1.
+
