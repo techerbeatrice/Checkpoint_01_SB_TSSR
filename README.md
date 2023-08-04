@@ -44,8 +44,8 @@ _Réponse_ : Non, Ubuntu-2 est connecté au switch, et le switch est connecté �
 
 | Réseau  | Adresse de diffusion          | Plage d'adresses disponibles |
 | :--------------- |:---------------:| -----:|         
-|10.0.1.0|10.0.1.63|64 adresses IP disponibles|   
-|10.0.0.0|10.0.0.255|256 adresses IP disponibles|   
+|10.0.1.0|10.0.1.63|62 adresses IP disponibles|   
+|10.0.0.0|10.0.0.255|254 adresses IP disponibles|   
 
 **12. La machine Ubutun-1 et Ubutun-2 peuvent elle communiquer entre elle ? Explique la raison.**   
 Non, sur le schéma, les machines 1 et 2 sont éteintes ainsi que le routeur pfSense. Il faut les allumer pour que le routeur soit en mesure de diriger le trafic entre les deux réseaux locaux (représentés par switch et switch1) et d'acheminer les paquets de données entre les machines.
@@ -82,7 +82,8 @@ Non, la commmunication a échoué (no response found!), initialisé par matérie
 
 _Quels ont été les rôles des matériels A et B ?_   
 
-**Fichier 3 : TSSRCheckpoint1_Capture3.pcap**
+**Fichier 3 : TSSRCheckpoint1_Capture3.pcap**    
+
 _Dans cette trame, qui initialise la communication ?_         
 La machine 66:68:02 qui a l'adresse IP 10.10.80.3
 
