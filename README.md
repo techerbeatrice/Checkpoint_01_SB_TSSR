@@ -39,3 +39,8 @@ Description : "Ubuntu1" est le nom donné au sous-réseau du Docker2, et il cont
 **5) De même, qu'est-ce que A et B ?**
 
 _Réponse_ : A correspond au switch et B correspond au pfSense firewall/routeur.
+
+**6) Peut-on considérer que Ubuntu-2 est connecté directement à em1 de l'équipement pfSense ?**
+
+_Réponse_ : Non, Ubuntu-2 est connecté au switch, et le switch est connecté à l'interface em1 de pfSense. La connexion entre le conteneur et pfSense est donc indirecte, via le switch.
+
