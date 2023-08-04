@@ -1,6 +1,6 @@
 # Checkpoint_01_SB_TSSR
 
-## **Quizz** :
+## **1.1 Éléments du réseau - QUIZZ** :
 
 **1) Pour le matériel B, connais-tu ses différences avec A ?**  
 
@@ -22,19 +22,19 @@ _Réponse_ : C'est le masque sous-réseau en notation CIDR de l'IP 10.0.1.0 qui 
 
 **4)Dans le vocabulaire IP, qu'est-ce que Ubuntu-1, Ubuntu-2, ... ?**
 
-_Réponse_ : Ubuntu-1 et Ubuntu-2 sont des dockers. Deux sous-réseaux sont utilisés pour isoler les conteneurs Docker et leur permettre de communiquer entre eux au sein de ces sous-réseaux.
+_Réponse_ : Ubuntu-1 et Ubuntu-2 sont des dockers. Deux sous-réseaux sont utilisés pour isoler ces conteneurs Docker et leur permettre de communiquer entre eux au sein de ces sous-réseaux.
 
 Ubuntu2 :
 Adresse IP : 10.0.0.0
 Masque de sous-réseau : /24 (255.255.255.0)
 Taille du sous-réseau : 256 adresses (2^8), allant de 10.0.0.0 à 10.0.0.255
-Description : "Ubuntu2" est le nom donné au sous-réseau du Docker2, et il contient 256 adresses IP disponibles. La plage d'adresses va de 10.0.0.0 à 10.0.0.255.
+contient 256 adresses IP disponibles. La plage d'adresses va de 10.0.0.0 à 10.0.0.255.
 
 Ubuntu1 :
 Adresse IP : 10.0.1.0
 Masque de sous-réseau : /26 (255.255.255.192)
 Taille du sous-réseau : 64 adresses (2^6), allant de 10.0.1.0 à 10.0.1.63
-Description : "Ubuntu1" est le nom donné au sous-réseau du Docker2, et il contient 64 adresses IP disponibles. La plage d'adresses va de 10.0.1.0 à 10.0.1.63.
+contient 64 adresses IP disponibles. La plage d'adresses va de 10.0.1.0 à 10.0.1.63.
 
 **5) De même, qu'est-ce que A et B ?**
 
@@ -42,5 +42,18 @@ _Réponse_ : A correspond au switch et B correspond au pfSense firewall/routeur.
 
 **6) Peut-on considérer que Ubuntu-2 est connecté directement à em1 de l'équipement pfSense ?**
 
-_Réponse_ : Non, Ubuntu-2 est connecté au switch, et le switch est connecté à l'interface em1 de pfSense. La connexion entre le conteneur et pfSense est donc indirecte, via le switch.
+_Réponse_ : Non, Ubuntu-2 est connecté au switch, et le switch est connecté à l'interface em1 de pfSense. La connexion entre Ubuntu-2 et pfSense est donc indirecte, via le switch.
+
+## **1.2 Etude théorique** :
+
+**11. Calcul pour les deux réseaux :**
+
+| Réseau  | Adresse de diffusion          | Plage d'adresses disponibles |
+| :--------------- |:---------------:| -----:|         
+|10.0.1.0|10.0.1.63|64 adresses IP disponibles|   
+|10.0.0.0|10.0.0.255|256 adresses IP disponibles|   
+
+**12. La machine Ubutun-1 et Ubutun-2 peuvent elle communiquer entre elle ? Explique la raison.**
+
+Non, sur le plan, les machines 1 et 2 sont éteintes ainsi que le routeur pfSense. Il faut les allumer pour que le routeur soit en mesure de diriger le trafic entre les deux réseaux locaux (représentés par switch et switch1) et d'acheminer les paquets de données entre les machines.
 
